@@ -17,7 +17,7 @@ from mlxtend.plotting import plot_decision_regions
 
 """## K-Nearest Neighbors (knn)"""
 
-data = pd.read_csv('weather_forecast_data.csv') # leemos el csv
+data = pd.read_csv('data/weather_forecast_data.csv') # leemos el csv
 
 #print(data)
 
