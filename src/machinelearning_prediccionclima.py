@@ -1,4 +1,5 @@
 import numpy as np
+from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
@@ -17,8 +18,9 @@ from mlxtend.plotting import plot_decision_regions
 
 """## K-Nearest Neighbors (knn)"""
 
-data = pd.read_csv('data/weather_forecast_data.csv') # leemos el csv
-
+base_dir = Path(__file__).resolve().parent.parent / "data"
+csv_path = base_dir / "weather_forecast_data.csv"
+data = pd.read_csv(csv_path)
 #print(data)
 
 # Convertir 'rain'/'no rain' a 1/0
