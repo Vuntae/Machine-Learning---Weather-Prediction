@@ -15,7 +15,7 @@ La aplicación permite:
 2. Instala las dependencias necesarias utilizando `pip install -r requirements.txt`.
 3. Ejecuta el script principal con el comando:
     ```
-    python main.py
+    python machinelearning_prediccionclima.py
     ```
 4. Revisa los resultados en la consola o en los archivos de salida generados.
 
